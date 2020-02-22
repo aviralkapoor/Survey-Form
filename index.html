@@ -4,19 +4,32 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <h3 class="form-heading">Survey Form</h3>
                   <form>
+                    <h3 class="form-heading">Survey Form<hr></h3>
                                 <div class="name">
                                 <input type="text" class=" fname form-custom" name="fname" id="fname" placeholder="First Name" required>
                                 <input type="text" class="lname form-custom" name="lname" id="lname" placeholder="Last Name" required>
                                 </div>
+                                <input type="text" class="form-custom" name="regno" id="regno" pattern="RA[0-9]{13}" placeholder="Registration Number" required>
+                                <select required id="dept" class="form-custom" name="dept">
+                                    <option selected>Department</option>
+                                    <option>Computer Science Engineering</option>
+                                    <option>Aerospace Engineering</option>      
+                                    <option>Mechanical Engineering</option>      
+                                    <option>Electrical Engineering</option>      
+                                    <option>Civil Engineering</option>      
+                                    <option>Electronics and Communication Engineering</option>      
+                                    <option>Information Technology</option>      
+                                    <option>Aeronautical Engineering</option>      
+                                    <option>Automobile Engineering</option>      
+                                </select>
                                 <input type="email" class="form-custom" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email" required>
                                 <input type="tel" class="form-custom" name="phn_num" id="phn_num"pattern="^\d{10}$" placeholder="Mobile Number"required>
                                 <div class="gender">
-                                <input type="radio" class="male" name="gen" value="M" checked>
-                                <label for="male" class="male">Male</label>
-                                <input type="radio" class="female" name="gen" value="F">
-                                <label for="female" class="female">Female</label>
+                                <input type="radio" class="male" name="g" id="ma" value="M" checked>
+                                <label for="ma" class="male">Male</label>
+                                <input type="radio" class="female" name="g" id="fe" value="F">
+                                <label for="fe" class="female">Female</label>
                                 </div>
                                 <label for="dob"><strong>DOB</strong></label>
                                 <div class="dob">

@@ -1,17 +1,21 @@
 body{
     background-image: url("bg.jpg");
-}
-form{
     text-align: center;
     display: grid;
     grid-auto-columns: 500px;
+}
+form{
+    grid-column: 2/3;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 500px;
     grid-gap:16px;
 }
 label,input,button {
-    grid-column: 2/3;
+    grid-column: 1/2;
 }
 .name{
-        grid-column: 2/3;
+        grid-column: 1/2;
         display: grid;
         grid-auto-columns: 250px;
 }
@@ -22,7 +26,7 @@ label,input,button {
     grid-column: 2/3;
 }
 .gender{
-        grid-column: 2/3;
+        grid-column: 1/2;
         display: grid;
         grid-auto-columns: 250px;
 }
@@ -35,7 +39,7 @@ label,input,button {
     grid-column: 2/3;
 }
 .dob{
-    grid-column: 2/3;
+    grid-column: 1/2;
     display: grid;
     grid-auto-columns: 167px;
 }
