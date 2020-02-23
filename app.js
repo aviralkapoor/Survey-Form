@@ -30,7 +30,7 @@ app.post("/ajax/email",function(request,response){
         var year = `${request.body.year}`;
         var mailOptions = {
             from: 'Aviral Kapoor <kapooraviral411@gmail.com>',
-            to: '',
+            to: 'aviralkapoor424@gmail.com',
             subject: 'Form Submission',
 
             html:'<html><h3>Name: </h3>'+fname+' '+lname+'<br>\
