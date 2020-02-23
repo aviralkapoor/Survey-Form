@@ -83,3 +83,12 @@ label,input,button {
     font-weight: 500;
     text-align: center;
 }
+.al{
+	text-align: center;
+	padding: 10px;
+	background: #79C879;
+	color: #f4f4f4;
+    margin-bottom: 10px;
+    grid-column: 1/2;
+    display: none;
+}

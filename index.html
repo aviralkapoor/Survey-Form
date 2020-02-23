@@ -4,8 +4,9 @@
     <title>Survey Form</title>
 </head>
 <body>
-                  <form>
+                  <form action="/ajax/email" method="POST" onsubmit="return submitEmailForm(this);">
                     <h3 class="form-heading">Survey Form<hr></h3>
+                                <div class="al">Data Successfully Submitted</div>
                                 <div class="name">
                                 <input type="text" class=" fname form-custom" name="fname" id="fname" placeholder="First Name" required>
                                 <input type="text" class="lname form-custom" name="lname" id="lname" placeholder="Last Name" required>
@@ -26,9 +27,9 @@
                                 <input type="email" class="form-custom" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email" required>
                                 <input type="tel" class="form-custom" name="phn_num" id="phn_num"pattern="^\d{10}$" placeholder="Mobile Number"required>
                                 <div class="gender">
-                                <input type="radio" class="male" name="g" id="ma" value="M" checked>
+                                <input type="radio" class="male" name="g" id="ma" value="Male" checked>
                                 <label for="ma" class="male">Male</label>
-                                <input type="radio" class="female" name="g" id="fe" value="F">
+                                <input type="radio" class="female" name="g" id="fe" value="Female">
                                 <label for="fe" class="female">Female</label>
                                 </div>
                                 <label for="dob"><strong>DOB</strong></label>
@@ -117,5 +118,6 @@
                                 </div>
                             <button type="submit" class="btn">Submit</button>
                         </form>
+<script src="script.js"></script>
 </body>
 </html>
